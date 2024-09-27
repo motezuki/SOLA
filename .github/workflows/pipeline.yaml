@@ -18,7 +18,7 @@ jobs:
 
     - name: Build application
       run: |
-        gfortran -o myapp src/*.f90
+        gfortran -o myapp src/*.f
 
     - name: Run tests
       run: |

@@ -3,8 +3,7 @@
 {
 	"name": "FORTRAN",
 	"build": {
-		// "dockerfile": "Dockerfile"
-		"image": "ghcr.io/motezuki/fortran-dockerimage:latest"
+		"dockerfile": "Dockerfile"
 	},
 	"customizations": {
 		"vscode": {

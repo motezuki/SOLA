@@ -1,9 +1,10 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/cpp
 {
-	"name": "C++",
+	"name": "FORTRAN",
 	"build": {
-		"dockerfile": "Dockerfile"
+		// "dockerfile": "Dockerfile"
+		"image": "ghcr.io/motezuki/fortran-dockerimage:latest"
 	},
 	"customizations": {
 		"vscode": {

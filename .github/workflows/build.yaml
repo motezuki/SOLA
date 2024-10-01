@@ -13,13 +13,6 @@ jobs:
     - name: Set up Fortran
       uses: fortran-lang/setup-fortran@v1.6.1
 
-    # - name: Install dependencies
-    #   de
-
     - name: Build application
       run: |
         gfortran -o myapp src/*.f90
-
-    # - name: Run tests
-    #   run: |
-    #     ./myapp

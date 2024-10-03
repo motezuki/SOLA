@@ -18,6 +18,11 @@ jobs:
         gfortran -fprofile-arcs -ftest-coverage -O0 -o SOLA src/*.f90
         ls -la
 
+    - name: Run tests
+      run: |
+        ./SOLA
+        ls -la
+
     - name: coverage
       run: |
         bash <(curl -s https://codecov.io/bash)

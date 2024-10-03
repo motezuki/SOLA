@@ -2,9 +2,10 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/cpp
 {
 	"name": "FORTRAN",
-	"build": {
-		"dockerfile": "Dockerfile"
-	},
+	"image": "ghcr.io/motezuki/fortran-dockerimage:latest",
+	// "build": {
+	// 	"dockerfile": "Dockerfile"
+	// },
 	"customizations": {
 		"vscode": {
 			"extensions": [

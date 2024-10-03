@@ -4,9 +4,12 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ghcr.io/motezuki/fortran-dockerimage:latest
+    runs-on: ubuntu-24.04
 
     steps:
+    - name: setup fortran
+      uses: fortran-lang/setup-fortran@latest
+
     - name: Checkout repository
       uses: actions/checkout@v4
 

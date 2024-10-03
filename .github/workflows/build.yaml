@@ -16,6 +16,7 @@ jobs:
     - name: Build application
       run: |
         gfortran -fprofile-arcs -ftest-coverage -O0 -o SOLA src/*.f90
+        ls -l
 
     - name: tar files
       run: |
@@ -43,7 +44,6 @@ jobs:
     - name: Run tests
       run: |
         ./SOLA
-        ls -l
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4

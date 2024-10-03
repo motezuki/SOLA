@@ -12,5 +12,5 @@ program soma
     resultado = num1 + num2
 
     ! Exibe o resultado
-    print *, 'A soma de ', num1, ' e ', num2, ' é ', resultado
+    print *, 'A soma de ', num1, ' e ', num2, ' é:', resultado
 end program soma

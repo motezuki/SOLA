@@ -8,7 +8,7 @@ jobs:
 
     steps:
     - name: setup fortran
-      uses: fortran-lang/setup-fortran@latest
+      uses: fortran-lang/setup-fortran@v1.x
 
     - name: Checkout repository
       uses: actions/checkout@v4

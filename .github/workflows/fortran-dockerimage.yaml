@@ -18,7 +18,7 @@ jobs:
 
             - name: Build docker image
               run: |
-                docker build . --file Dockerfile --tag ghcr.io/motezuki/fortran-dockerimage:latest
+                docker build . --file .github/workflows/Dockerfile --tag ghcr.io/motezuki/fortran-dockerimage:latest
 
             - name: Docker push
               run: |

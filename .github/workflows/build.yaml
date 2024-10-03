@@ -22,6 +22,9 @@ jobs:
     runs-on: ubuntu-24.04
     needs: build
     steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
     - name: Run tests
       run: |
         ./SOLA
@@ -31,6 +34,9 @@ jobs:
     runs-on: ubuntu-24.04
     needs: tests
     steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
     - name: coverage
       uses: codecov/codecov-action@v4
       with:

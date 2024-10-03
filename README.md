@@ -2,4 +2,4 @@
 
 [![Fortran CI](https://github.com/motezuki/SOLA/actions/workflows/build.yaml/badge.svg)](https://github.com/motezuki/SOLA/actions/workflows/build.yaml)
 
-[![Test Coverage] (https://codecov.io/github/motezuki/SOLA/graphs/sunburst.svg?token=QHTLERHV5I)]()
+[![codecov](https://codecov.io/github/motezuki/SOLA/graph/badge.svg?token=QHTLERHV5I)](https://codecov.io/github/motezuki/SOLA)

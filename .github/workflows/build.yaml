@@ -44,13 +44,14 @@ jobs:
     - name: Run tests
       run: |
         ./SOLA
+        ls -l
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
         name: COVERAGE
         path: |
-          *.gcov
+          *.gcno
           *.gcda
   
   coverage:
@@ -61,7 +62,10 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: COVERAGE
-      
+    - name: list files
+      run: |
+        ls -l
+        
     - name: coverage
       uses: codecov/codecov-action@v4
       with:

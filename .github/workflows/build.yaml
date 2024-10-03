@@ -1,4 +1,4 @@
-name: Fortran CI
+name: CI
 
 on: [push, pull_request, workflow_dispatch]
 
@@ -18,11 +18,19 @@ jobs:
         gfortran -fprofile-arcs -ftest-coverage -O0 -o SOLA src/*.f90
         ls -la
 
+  tests:
+    runs-on: ubuntu-24.04
+    needs: build
+    steps:
     - name: Run tests
       run: |
         ./SOLA
         ls -la
 
+  coverage:
+    runs-on: ubuntu-24.04
+    needs: tests
+    steps:
     - name: coverage
       uses: codecov/codecov-action@v4
       with:

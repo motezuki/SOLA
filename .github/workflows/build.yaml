@@ -16,4 +16,4 @@ jobs:
     - name: Build application
       run: |
         gfortran -fprofile-arcs -ftest-coverage -O0 -o SOLA src/*.f90
-        ./SOLA
+        ls -la

@@ -24,6 +24,6 @@ jobs:
         ls -la
 
     - name: coverage
-      uses: actions/codecov@v4
+      uses: codecov/codecov-action@v4
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
